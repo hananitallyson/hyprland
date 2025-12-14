@@ -32,6 +32,14 @@ noto-fonts noto-fonts-emoji noto-fonts-cjk \
 ttf-dejavu ttf-liberation ttf-ubuntu-font-family
 ```
 
+## Create Default Directories
+
+```bash
+paru -S xdg-user-dirs
+xdg-user-dirs-update
+```
+
+
 ## Thumbnail and Preview Dependencies
 
 ```bash
