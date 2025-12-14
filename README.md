@@ -35,7 +35,7 @@ ttf-dejavu ttf-liberation ttf-ubuntu-font-family
 ## Create Default Directories
 
 ```bash
-paru -S xdg-user-dirs
+paru -S --needed xdg-user-dirs
 xdg-user-dirs-update
 ```
 
@@ -43,5 +43,5 @@ xdg-user-dirs-update
 ## Thumbnail and Preview Dependencies
 
 ```bash
-paru -S tumbler poppler-glib ffmpegthumbnailer freetype2 libgsf
+paru -S --needed tumbler poppler-glib ffmpegthumbnailer freetype2 libgsf
 ```
