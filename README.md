@@ -146,7 +146,7 @@ With the base system ready, we now move to the heart of the guide. This section 
 These packages are required for basic system integration, permissions handling, and proper Wayland support, ensuring applications run correctly in Hyprland.
 
 ```bash
-sudo pacman -S dbus xdg-utils wireless_tools wpa_supplicant xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
+sudo pacman -S xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
 ### Install Hyprland
@@ -222,16 +222,16 @@ makepkg -si
 
 ### Network Management
 
-NetworkManager is a background service that automatically manages network connections.
+NetworkManager manages network connections, while iwd provides modern and efficient Wi-Fi support used by NetworkManager.
 
 ```bash
-sudo pacman -S networkmanager
+sudo pacman -S networkmanager iwd
 ```
 
-Enable the service to have network management working:
+Enable the services to have network management working:
 
 ```bash
-sudo systemctl start NetworkManager.service
+sudo systemctl enable --now NetworkManager.service iwd.service
 ```
 
 ### File Management
