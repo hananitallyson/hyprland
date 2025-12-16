@@ -10,7 +10,7 @@ This guide assumes prior knowledge of Linux, with a focus on [Arch Linux](https:
 Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
 
 ```txt
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
