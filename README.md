@@ -275,3 +275,41 @@ Tar is a command-line utility for creating and extracting archives. It’s essen
 ```bash
 sudo pacman -S tar
 ```
+
+## Theming
+
+### Settings Editor
+
+nwg-look is a lightweight GTK3 settings editor designed for modern Wayland environments.
+
+```bash
+sudo pacman -S nwg-look
+```
+
+### GTK Theme
+
+[Graphite GTK Theme](https://github.com/vinceliuice/Graphite-gtk-theme) is a modern and elegant GTK theme for Linux. It provides a clean, dark interface with refined window and widget styling. Clone the repository, navigate to the directory, and run the installer script:
+
+```bash
+git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
+cd Graphite-gtk-theme
+./install.sh -l --tweaks black rimless
+```
+
+This will install the theme to your system, making it available in your desktop environment's appearance settings.
+
+### Wallpaper
+
+Hyprpaper is a simple and fast wallpaper utility for Hyprland.
+
+```bash
+sudo pacman -S hyprpaper
+```
+
+### Cursor
+
+Bibata is an open source, compact, and material designed cursor.
+
+```bash
+paru -S bibata-cursor-theme-bin
+```
