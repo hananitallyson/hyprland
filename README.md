@@ -348,3 +348,13 @@ Grimblast is a simple screenshot utility designed for Wayland and tightly integr
 ```bash
 paru -S grimblast-git
 ```
+
+## Dotfiles
+
+### Dotfiles Management
+
+Stow is a symbolic link manager that organizes software packages and configuration files.
+
+```bash
+sudo pacman -S stow
+```
