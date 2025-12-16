@@ -2,6 +2,10 @@
 
 Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linux, focused on looks and simplicity.
 
+## DOCUMENTATION
+
+
+
 ## GETTING STARTED
 This guide assumes prior knowledge of Linux, with a focus on [Arch Linux](https://archlinux.org/). The following prerequisites are required.
 
@@ -195,7 +199,7 @@ A notification daemon is essential for managing system notifications. Many apps 
 sudo pacman -S mako
 ```
 
-## Essential Utilities
+## ESSENTIAL UTILITIES
 
 ### Getting the AUR Helper
 
@@ -276,7 +280,7 @@ Tar is a command-line utility for creating and extracting archives. It’s essen
 sudo pacman -S tar
 ```
 
-## Theme Customization
+## THEME CUSTOMIZATION
 
 ### Settings Editor
 
@@ -323,7 +327,7 @@ Bibata is an open source, compact, and material designed cursor.
 paru -S bibata-cursor-theme-bin
 ```
 
-## Miscellaneous Utilities
+## MISCELLANEOUS UTILITIES
 
 ### Color Picker
 
@@ -349,7 +353,7 @@ Grimblast is a simple screenshot utility designed for Wayland and tightly integr
 paru -S grimblast-git
 ```
 
-## Dotfiles
+## CONFIG FILES
 
 ### Dotfiles Management
 
