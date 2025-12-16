@@ -378,3 +378,14 @@ Stow is a symbolic link manager that organizes software packages and configurati
 ```bash
 sudo pacman -S stow
 ```
+
+### Applying Dotfiles with Stow
+
+The commands below clone the dotfiles and use Stow to create symbolic links for the configuration files.
+
+```bash
+git clone https://github.com/hananitallyson/dotfiles.git
+cd ~/dotfiles
+stow .
+```
+
