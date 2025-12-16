@@ -146,7 +146,7 @@ With the base system ready, we now move to the heart of the guide. This section 
 XDG Desktop Portal provides a bridge for sandboxed apps to access system resources, Polkit manages system-wide privileges, and QT-Wayland enable Wayland support for Qt5 and Qt6 applications, ensuring they run properly in Hyprland.
 
 ```bash
-sudo pacman -S dbus xdg-utils wireless-tools wpa_supplicant xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
+sudo pacman -S dbus xdg-utils wireless_tools wpa_supplicant xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
 To autostart Polkit, append the following to your hyprland.conf:
