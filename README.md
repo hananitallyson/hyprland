@@ -4,7 +4,12 @@ Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linu
 
 ## DOCUMENTATION
 
-
+- [Getting Started](#getting-started)
+- [Core Installation](#core-installation)
+- [Essential Utilities](#essential-utilities)
+- [Theme Customization](#theme-customization)
+- [Miscellaneous Utilities](#miscellaneous-utilities)
+- [Config Files](#config-files)
 
 ## GETTING STARTED
 This guide assumes prior knowledge of Linux, with a focus on [Arch Linux](https://archlinux.org/). The following prerequisites are required.
