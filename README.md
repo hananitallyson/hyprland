@@ -143,29 +143,44 @@ With the base system ready, we now move to the heart of the guide. This section 
 
 ### Critical System Components
 
-XDG Desktop Portal provides a bridge for sandboxed apps to access system resources, Polkit manages system-wide privileges, and QT-Wayland enable Wayland support for Qt5 and Qt6 applications, ensuring they run properly in Hyprland.
+These packages are required for basic system integration, permissions handling, and proper Wayland support, ensuring applications run correctly in Hyprland.
 
 ```bash
 sudo pacman -S dbus xdg-utils wireless_tools wpa_supplicant xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
-To autostart Polkit, append the following to your hyprland.conf:
-
-```ini
-exec-once = /usr/lib/polkit-kde-authentication-agent-1
-```
-
-
 ### Install Hyprland
+
+Hyprland is the Wayland compositor used as the main desktop environment.
 
 ```bash
 sudo pacman -S hyprland
 ```
 
-### Uwsm
+Start Hyprland once to generate the default configuration files:
+
+```bash
+Hyprland
+```
+
+After exiting Hyprland, enable Polkit to start automatically by adding the following line to your hyprland.conf:
+
+```ini
+exec-once = /usr/lib/polkit-kde-authentication-agent-1
+```
+
+### Session Manager
+
+UWSM is a session manager that helps start Wayland compositors correctly.
 
 ```bash
 sudo pacman -S uwsm
+```
+
+To test if UWSM is working correctly, start Hyprland once using it:
+
+```bash
+uwsm start hyprland
 ```
 
 ### Display Manager
