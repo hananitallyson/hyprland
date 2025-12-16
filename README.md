@@ -163,5 +163,29 @@ sudo pacman -S xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayl
 
 To autostart Polkit, append the following to your hyprland.conf:
 ```ini
-exec-once=/usr/lib/polkit-kde-authentication-agent-1
+exec-once = /usr/lib/polkit-kde-authentication-agent-1
+```
+
+### Status Bar
+
+Waybar provides real-time system information at a glance, ensuring you stay informed about your system's status.
+
+```bash
+sudo pacman -S waybar
+```
+
+### Runner and Application Launcher
+
+Wofi provides a lightweight, Wayland-native launcher for quickly finding and launching applications.
+
+```bash
+sudo pacman -S wofi
+```
+
+### Notification Daemon
+
+A notification daemon is essential for managing system notifications. Many apps may freeze without one running. Mako is a lightweight and customizable option.
+
+```bash
+sudo pacman -S mako
 ```
