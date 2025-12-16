@@ -5,16 +5,6 @@ Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linu
 ## GETTING STARTED
 This guide assumes prior knowledge of Linux, with a focus on [Arch Linux](https://archlinux.org/). The following prerequisites are required.
 
-### Getting the AUR Helper
-
-Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
-
-```txt
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
 
 ### Text and Code Editor
 
@@ -52,6 +42,30 @@ Save the file and exit the editor. Then, synchronize the package databases:
 sudo pacman -Syu
 ```
 
+### Microcode
+
+Processor manufacturers release stability and security updates to CPU microcode. Installing microcode updates ensures your system runs reliably. Depending on your CPU, install the appropriate package:
+
+```bash
+sudo pacman -S amd-ucode
+```
+
+```bash
+sudo pacman -S intel-ucode
+```
+
+After installation, regenerate your bootloader configuration for grub:
+
+```bash
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Then reboot your system to apply the updates.
+
+```bash
+reboot
+```
+
 ### Video Stack
 
 Install the necessary graphics drivers and libraries for proper GPU support, rendering, and video acceleration. I use AMD, so I'm installing the packages for AMD.
@@ -65,7 +79,6 @@ Nvidia option:
 ```bash
 sudo pacman -S nvidia-dkms nvidia-utils egl-wayland
 ```
-
 
 ### Audio Stack
 
@@ -182,9 +195,20 @@ A notification daemon is essential for managing system notifications. Many apps 
 sudo pacman -S mako
 ```
 
+### Getting the AUR Helper
+
+Paru (or any other AUR helper like yay) simplifies the search, compilation, and installation of packages that are not in the official Arch repositories, but rather in the AUR (Arch User Repository). Installing it is a crucial step in Arch Linux to manage community packages.
+
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
 ## Essential Utilities
 
-### Network
+### Network Management
 
 NetworkManager is a background service that automatically manages network connections.
 
