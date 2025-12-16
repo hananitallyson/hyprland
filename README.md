@@ -298,6 +298,15 @@ cd Graphite-gtk-theme
 
 This will install the theme to your system, making it available in your desktop environment's appearance settings.
 
+### Icon Set
+
+[Yet Another Monochrome Icon Set](https://www.pling.com/p/2303161/) is a clean, adaptive monochrome icon theme. It works especially well with Graphite GTK Theme.
+
+```bash
+tar -xzvf yet-another-monochrome-icon-set.tar.gz
+sudo mv YAMIS /usr/share/icons/
+```
+
 ### Wallpaper
 
 Hyprpaper is a simple and fast wallpaper utility for Hyprland.
