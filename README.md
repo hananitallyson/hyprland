@@ -349,10 +349,10 @@ sudo pacman -S wl-clipboard cliphist
 
 ### Screenshotting
 
-Grimblast is a simple screenshot utility designed for Wayland and tightly integrated with Hyprland. It supports full-screen, window, and region screenshots, with clipboard and save options.
+Grim and slurp provide a lightweight and minimal screenshot workflow for Wayland. Grim captures the image, while slurp lets you select an area or window interactively.
 
 ```bash
-yay -S grimblast-git
+sudo pacman -S grim slurp
 ```
 
 ### Fetching
