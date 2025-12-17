@@ -94,21 +94,21 @@ sudo pacman -S nvidia-dkms nvidia-utils egl-wayland
 Set up PipeWire and related components for a modern, flexible audio system with volume and device management.
 
 ```bash
-sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol pamixer
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber pavucontrol
 ```
 
 ### Nerd Fonts & Extra Fonts
 
-Install Nerd Fonts to enhance icon support and code text display.
+Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads) to enhance icon support and code text display.
 
 ```bash
-sudo pacman -S nerd-fonts
+sudo pacman -S ttf-jetbrains-mono-nerd ttf-cascadia-code-nerd
 ```
 
 Standard fonts for readability, emoji support, and multilingual text (CJK scripts included).
 
 ```bash
-sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-ubuntu-font-family
+sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk
 ```
 
 ### Terminal Emulator and Shell
@@ -146,7 +146,7 @@ With the base system ready, we now move to the heart of the guide. This section 
 These packages are required for basic system integration, permissions handling, and proper Wayland support, ensuring applications run correctly in Hyprland.
 
 ```bash
-sudo pacman -S xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland
 ```
 
 ### Install Hyprland
@@ -222,10 +222,10 @@ makepkg -si
 
 ### Network Management
 
-NetworkManager manages network connections, while iwd provides modern and efficient Wi-Fi support used by NetworkManager.
+NetworkManager is a program that provides detection and configuration so systems can automatically connect to networks.
 
 ```bash
-sudo pacman -S networkmanager iwd
+sudo pacman -S networkmanager
 ```
 
 Enable the services to have network management working:
