@@ -236,6 +236,12 @@ sudo systemctl enable --now NetworkManager.service
 
 ### File Management
 
+GVfs (GNOME Virtual File System) is a userspace virtual filesystem that lets applications access remote servers and local devices as if they were local files, without extra protocol-specific coding.
+
+```bash
+sudo pacman -S gvfs
+```
+
 xdg-user-dirs manages standard user folders like Desktop, Documents, Downloads, Music, and Pictures, ensuring they are recognized by file managers and applications.
 
 ```bash
