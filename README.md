@@ -1,4 +1,4 @@
-e# MONOCHROME HYPRLAND
+# MONOCHROME HYPRLAND
 
 Welcome to the Monochrome Hyprland Guide! A minimal Hyprland setup for Arch Linux, focused on looks and simplicity.
 
