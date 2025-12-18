@@ -412,10 +412,10 @@ This section provides a minimal gaming environment for Arch Linux running Hyprla
 
 ### Core Gaming Stack
 
-This stack includes Steam as the main gaming platform, udev rules for proper controller support, and GameMode to automatically optimize system performance while games are running, including 32-bit support required by Proton.
+Steam provides the main gaming platform, while GameMode optimizes system performance during gameplay with required 32-bit Proton support.
 
 ```bash
-sudo pacman -S steam steam-devices gamemode lib32-gamemode
+sudo pacman -S steam gamemode lib32-gamemode
 ```
 
 Heroic Games Launcher is used for running Epic Games Store and GOG titles outside of Steam, installed via Flatpak to ensure isolation and up-to-date runtimes.
