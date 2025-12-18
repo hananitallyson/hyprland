@@ -424,6 +424,12 @@ Heroic Games Launcher is used for running Epic Games Store and GOG titles outsid
 flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
+Bottles offers a powerful environment to manage Windows software and prefixes, allowing for easy execution of standalone games and launchers with custom configurations.
+
+```bash
+flatpak install flathub com.usebottles.bottles
+```
+
 ### ICD Loaders
 
 These packages are required to load the correct Vulkan driver for the GPU and provide both 64-bit and 32-bit Vulkan support, which is essential for Proton and Wine-based games.
